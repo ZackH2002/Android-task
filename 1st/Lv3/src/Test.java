@@ -55,7 +55,7 @@ public class Test {
     public static void sort(List<Integer> list){
         
         for (int i = 0; i <  list.size();i++) {
-            for (int j = 0; j <list.size()-1 ; j++) {
+            for (int j = 0; j < list.size()-1 ; j++) {
                 if (list.get(j+1)<= list.get(j)){
                     int min=0;
                     min= list.get(j);

@@ -13,7 +13,9 @@ public class Test {
                 m1[i][j] = input;
             }
         }
-        System.out.print("请输入第二个矩阵(矩阵为2行3列)的元素：");
+        System.out.print("请输入第二个矩阵(矩阵为2行3" +
+                "】" +
+                "列)的元素：");
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 3; j++) {
                 Scanner scanner = new Scanner(System.in);
