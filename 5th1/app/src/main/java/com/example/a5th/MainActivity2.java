@@ -29,12 +29,12 @@ public class MainActivity2 extends AppCompatActivity {
                 String account = getEdit_account.getText().toString().trim();
                 String password = getEdit_password.getText().toString().trim();
                 String password1 = getEdit_password1.getText().toString().trim();
-                if (name.equals("")||account.equals("")||password.equals("")||password1.equals("")){
-                    Toast.makeText(MainActivity2.this,"输入的信息不完善",Toast.LENGTH_LONG).show();
-                }else if (!Objects.equals(password, password1)){
-                    Toast.makeText(MainActivity2.this,"两次输入的密码不一致",Toast.LENGTH_LONG).show();
+                if (name.equals("") || account.equals("") || password.equals("") || password1.equals("")) {
+                    Toast.makeText(MainActivity2.this, "输入的信息不完善", Toast.LENGTH_LONG).show();
+                } else if (!Objects.equals(password, password1)) {
+                    Toast.makeText(MainActivity2.this, "两次输入的密码不一致", Toast.LENGTH_LONG).show();
                 }
-                Toast.makeText(MainActivity2.this,"注册成功",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity2.this, "注册成功", Toast.LENGTH_LONG).show();
             }
         });
     }
