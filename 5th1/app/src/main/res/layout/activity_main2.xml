@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tv_top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="注册账号"
+        android:textColor="#87CEFA"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="马上开始网上冲浪"
+        android:textColor="#87CEEB" />
+
+    <RelativeLayout
+        android:id="@+id/layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="昵称"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_name"
+            android:hint="请输入昵称"
+            android:maxLength="10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="账号"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_account"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_account"
+            android:hint="请输入账号"
+            android:inputType="number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="密码"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_password"
+            android:hint="请输入密码"
+            android:inputType="textPassword">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_password1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="密码"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_password1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_password1"
+            android:hint="请确认输入密码"
+            android:inputType="textPassword">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btm_SignUp1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/layout_password1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#87CEEB"
+        android:text="立即注册"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+</RelativeLayout>
