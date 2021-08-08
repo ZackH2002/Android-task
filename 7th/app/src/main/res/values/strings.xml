@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Note</string>
+    <string name="my_notes">My Notes</string>
+    <string name="notes_title">在此处键入标题</string>
+    <string name="notes_content">在此处键入内容</string>
+    <string name="notes_time">点击右侧按钮设置时间</string>
+</resources>
